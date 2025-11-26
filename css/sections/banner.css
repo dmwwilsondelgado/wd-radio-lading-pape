@@ -83,7 +83,7 @@ header{
     align-items: center;
     padding: 20px;
     margin-top: 105px;
-    margin-left:105px ;
+    margin-left:405px ;
 }
 
 .banner-left {
@@ -93,8 +93,16 @@ header{
 
 .banner-right {
     text-align: left;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--fondo-azul-principal);
 }
 
 .logo {
     width: 200px; /* no se toca el tamaño */
+}
+.banner-content{
+    margin: 0 auto;
+    z-index: 21;
+    position: relative;
 }
