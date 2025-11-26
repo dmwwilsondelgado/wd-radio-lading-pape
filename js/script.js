@@ -1,1 +1,1 @@
-document.writeln("Hola web")
+document.writeln("Hola web");
