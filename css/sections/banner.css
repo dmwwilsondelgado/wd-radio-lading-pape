@@ -1,0 +1,14 @@
+header{
+    background-color: var(--fondo-azul-principal);
+    padding: 10px;
+    display: flex;
+}
+
+.logo-header{
+    width: 90px;
+}
+.header-content{
+    display: flex;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
