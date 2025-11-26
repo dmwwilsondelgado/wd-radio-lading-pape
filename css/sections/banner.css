@@ -83,7 +83,7 @@ header{
     align-items: center;
     padding: 20px;
     margin-top: 105px;
-    margin-left:405px ;
+    margin-left:405px ;/*  aca aver si se puede cambiar puede producir errores mas adelante */
 }
 
 .banner-left {
@@ -105,4 +105,5 @@ header{
     margin: 0 auto;
     z-index: 21;
     position: relative;
+    color: white;
 }
