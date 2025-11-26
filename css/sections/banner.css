@@ -101,9 +101,40 @@ header{
 .logo {
     width: 200px; /* no se toca el tamaño */
 }
+
+.button-play{
+    display: inline-flex;
+    z-index: 22;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--fondo-azul-secundario);
+    border-radius: 50px;
+}
+
+.play-btn{
+    padding: 20px;
+    border-radius:50% ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .banner-content{
+    display: flex;
     margin: 0 auto;
     z-index: 21;
+    padding: 100px;
     position: relative;
     color: white;
 }

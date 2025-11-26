@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wd Radio Emisora Cristiana</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <div class="content">
@@ -36,10 +37,15 @@
                     <h2>a Dios</h2>
                 </div>
             </div>
-            <div class="banner-content">
-                <button id="playBtn" class="play-btn"></button>
+            <div class="button-play">
+                <button id="playBtn" class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <i class="fa-sharp fa-solid fa-volume-high"></i>
                 <input type="range" id="volume" min="0" max="1" step="0.05">
                 <audio src="" id="player"></audio>
+            </div>
+            <div class="banner-content">
                 <div class="banner-info">
                     <h2>Escuchanos</h2>
                     <h2>aTravez de Nuestra Emisora Online</h2>
