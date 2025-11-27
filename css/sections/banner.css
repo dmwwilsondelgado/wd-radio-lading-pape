@@ -109,43 +109,26 @@ header{
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     display: flex;
     align-items: center;
     gap: 10px;
-
-    width: fit-content;   /* 🔥 CLAVE */
     padding: 10px 15px;
-
-    background-color: rgba(0, 60, 120, 0.8);
+    background-color:var(--fondo-azul-principal);
     border-radius: 50px;
     z-index: 30;
 }
-
-/* .play-btn{
-    padding: 20px;
-    border-radius:50% ;
-    border: none;
-}
-
-
- */
-
-
-
 .play-btn{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-color: red;
 }
-
-
-
-
-
-
+.fa-solid{
+    color: white;
+}
+/* editamos el baner que quede en el centro  */
 
 .banner-content{
     display: flex;
