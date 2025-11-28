@@ -131,10 +131,21 @@ header{
 /* editamos el baner que quede en el centro  */
 
 .banner-content{
-    display: flex;
-    margin: 0 auto;
-    z-index: 21;
+    position: absolute;
+    left: 28%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 40;
     padding: 100px;
-    position: relative;
     color: white;
+}
+.banner-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+}
+.banner-info h2{
+    margin: 0;
+    font-weight: bold;
 }
