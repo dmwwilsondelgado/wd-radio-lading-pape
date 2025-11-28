@@ -1,0 +1,33 @@
+.acerca-de-nosotros-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.acerca-info{
+    text-align: center;
+}
+@media (max-width: 768px){
+    .acerca-de-nosotros-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.acerca-de-nosotros-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a3d91;
+}
+
+.acerca-de-nosotros-content p{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 10px;
+    line-height: 1.6;
+}

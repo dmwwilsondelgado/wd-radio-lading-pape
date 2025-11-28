@@ -1,0 +1,17 @@
+.vision-mision-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.vision-content,
+.mision-content{
+    max-width: 400px;
+}
+
+
+.vision-mision-content h2 {
+    text-align: center;
+     line-height: 1.6;
+}

@@ -4,6 +4,8 @@
 @import url(sections/variables.css);
 @import url(sections/banner.css);
 @import url(sections/quienes-somos.css);
+@import url(sections/vision-mision-content.css);
+@import url(sections/acerca-de-nosostros.css);
 
 *{
     margin: 0;
