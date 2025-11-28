@@ -19,15 +19,13 @@
     z-index: 1;
 }
 
-
+/* fuentes */
 .vision-content,
 .mision-content{
+    margin-top: 20%;
     max-width: 400px;
-    color: aliceblue;
-}
-
-
-.vision-mision-content h2 {
+    color: white;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.6;   
 }
+
