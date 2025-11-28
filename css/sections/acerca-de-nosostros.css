@@ -1,26 +1,7 @@
 .acerca-de-nosotros{
     background: var(--bacground-fondo-marino-opaco);
 }
-/* .acerca-de-nosotros::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(255,205,0,0.1),
-        rgba(0,56,168,0.1),
-        rgba(206,17,38,0.1)
-    );
-    animation: luzColombia 6s ease-in-out infinite;
-    pointer-events: none;
-} 
 
-@keyframes luzColombia {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-*/
 .acerca-de-nosotros-content{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -51,39 +32,6 @@
     line-height: 1.6;
     color: white;
 }
-
-
-
-
-/* .logo-wd-letf-img,
-.logo-wd-right-img {
-    animation: logoEntrada 1.6s ease-out forwards;
-}
-
-@keyframes logoEntrada {
-    0% {
-        opacity: 0;
-        transform: translateY(80px) rotate(-180deg) scale(0.8);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(-10px) rotate(20deg) scale(1.05);
-    }
-    100% {
-        transform: translateY(0) rotate(0) scale(1);
-    }
-}
-
-
- */
-
-
-
-
-
-
-
-
 
 
 

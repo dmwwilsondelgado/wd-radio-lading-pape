@@ -1,9 +1,8 @@
 .versiculo-oyente{
-    background: #0a3d91;
     color: white;
     text-align: center;
     height: 50vh;
-  
+    background-image: url("../../img/chica-microfono-radio-sonriente.png");
 }
 
 .versiculo-oyente p{
