@@ -1,84 +1,76 @@
 .footer {
     background: #0b0b0b;
-    color: #cfcfcf;
+    color: #eaeaea;
     padding: 60px 20px 20px;
-    font-size: 14px;
+    font-family: system-ui, sans-serif;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
+/* columnas */
 .footer-col h4 {
-    color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
-    position: relative;
+    color: #f4c430; /* amarillo elegante */
 }
 
-.footer-col h4::after {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background: #facc15; /* amarillo suave */
-    display: block;
-    margin-top: 6px;
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cfcfcf;
 }
 
-.footer-col ul {
+.footer-center {
+    text-align: center;
+}
+
+/* listas */
+.footer ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-col ul li {
+.footer li {
+    font-size: 14px;
     margin-bottom: 10px;
+    color: #cfcfcf;
 }
 
-.footer-col a {
+.footer a {
     color: #cfcfcf;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color .3s, transform .3s;
 }
 
-.footer-col a:hover {
-    color: #facc15;
+.footer a:hover {
+    color: #f4c430;
+    transform: translateX(4px);
 }
 
-/* redes */
-.social-links li a {
-    display: inline-block;
-}
-
-/* donaciones */
-.donation {
-    display: inline-block;
-    margin-top: 10px;
-    color: #facc15;
-    font-weight: bold;
-}
-
-/* parte inferior */
+/* footer inferior */
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid #222;
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: #8a8a8a;
+    color: #777;
 }
 
 /* responsive */
-@media (max-width: 600px) {
-    .footer {
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
-    .footer-col h4::after {
-        margin-left: auto;
-        margin-right: auto;
+    .footer-center {
+        text-align: center;
     }
 }
