@@ -1,20 +1,84 @@
-.footer{
-    background: #111;
-    color: white;
-    padding: 60px 20px;
+.footer {
+    background: #0b0b0b;
+    color: #cfcfcf;
+    padding: 60px 20px 20px;
+    font-size: 14px;
 }
 
-.menu-footer{
-    display: flex;
-    max-width: 1100px;
+.footer-container {
+    max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.menu-footer p,
-.menu-footer a{
-    color: #ddd;
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #facc15; /* amarillo suave */
+    display: block;
+    margin-top: 6px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #cfcfcf;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #facc15;
+}
+
+/* redes */
+.social-links li a {
+    display: inline-block;
+}
+
+/* donaciones */
+.donation {
+    display: inline-block;
+    margin-top: 10px;
+    color: #facc15;
+    font-weight: bold;
+}
+
+/* parte inferior */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
