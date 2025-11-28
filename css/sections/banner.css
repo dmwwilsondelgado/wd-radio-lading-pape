@@ -136,7 +136,7 @@ header{
     /* transform: translate(-50%,-50%); */
     z-index: 40;
     padding: 100px;
-    color: white;
+    color: var(--fondo-azul-secundario);
 }
 .banner-info{
     display: flex;
@@ -148,4 +148,43 @@ header{
 .banner-info h2{
     margin: 0;
     font-weight: bold;
+}
+
+/* animation radioo wave */
+
+.radio-wave{
+    position: absolute;
+    bottom: 33%;
+    right: 39%;
+    width: 20px;
+    height: 20px;
+    background: #00c3ff;
+    border-radius: 50%;
+    /* margin: auto; */
+}
+
+.radio-wave::before,
+.radio-wave::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(0,195,255,.7);
+    animation: wave 2s infinite;
+}
+
+.radio-wave::after{
+    animation-delay: 1s;
+}
+
+/* animacion */
+@keyframes wave{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(4);
+        opacity: 0;
+    }
 }
