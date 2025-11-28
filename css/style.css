@@ -27,6 +27,15 @@ body{
 
 
 
+@media (max-width: 768px){
+    .acerca-de-nosotros-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 /* @media (max-width:786px) {
     
 } */
