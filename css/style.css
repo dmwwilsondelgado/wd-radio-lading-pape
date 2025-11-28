@@ -6,6 +6,7 @@
 @import url(sections/quienes-somos.css);
 @import url(sections/vision-mision-content.css);
 @import url(sections/acerca-de-nosostros.css);
+@import url(sections/versiculo-oyente.css);
 
 *{
     margin: 0;

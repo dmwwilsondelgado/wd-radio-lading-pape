@@ -1,0 +1,12 @@
+.versiculo-oyente{
+    background: #0a3d91;
+    color: white;
+    text-align: center;
+    height: 50vh;
+}
+
+.versiculo-oyente p{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
