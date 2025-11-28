@@ -44,22 +44,22 @@ header{
 }
 
 .slide1{
-    background-image: url("../../img/vista-posterior-hombre-disfrutando-de-la-musica.jpg");
+    background-image: url("../../img/vista-posterior-hombre-disfrutando-de-la-musica.webp");
     animation-delay: 0s;  
 }
 
 .slide2{
-    background-image: url("../../img/anfitrion-femenino-comunicandose-por-el-microfono-mujer-en-estudio-de-radio.jpg");
+    background-image: url("../../img/anfitrion-femenino-comunicandose-por-el-microfono-mujer-en-estudio-de-radio.webp");
     animation-delay: 6s;
 }
 
 .slide3{
-    background-image: url("../../img/mujer-trabajando-en-radio-con-equipo-profesional.jpg");
+    background-image: url("../../img/mujer-trabajando-en-radio-con-equipo-profesional.webp");
     animation-delay: 12s;
 }
 
 .slide4{
-    background-image: url("../../img/hermoso-tiro-de-un-hombre-con-la-cabeza-contra-la-cruz-de-madera-en-un-campo-de-hierba.jpg");
+    background-image: url("../../img/hermoso-tiro-de-un-hombre-con-la-cabeza-contra-la-cruz-de-madera-en-un-campo-de-hierba.webp");
     animation-delay: 18s;
 }
 

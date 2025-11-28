@@ -1,8 +1,9 @@
 .quienes-somos{
     position: relative;
-    height: 50vh;
-    background-image: url("../../img/chica-audifonos.png");
+    height: 100vh;
+    background-image: url("../../img/chica-audifonos.webp");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 .quienes-somos::before{
