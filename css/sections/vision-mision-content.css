@@ -4,15 +4,30 @@
     gap: 40px;
     flex-wrap: wrap;
     height: 100vh;
+    background-image: url("../../img/libro-abierto-con-elemento-natural.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Overlay negro */
+.vision-mision-content::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(156, 80, 15, 0.2);
+    z-index: 1;
+}
+
 
 .vision-content,
 .mision-content{
     max-width: 400px;
+    color: aliceblue;
 }
 
 
 .vision-mision-content h2 {
     text-align: center;
-     line-height: 1.6;
+    line-height: 1.6;
 }
