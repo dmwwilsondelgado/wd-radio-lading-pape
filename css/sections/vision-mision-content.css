@@ -3,6 +3,7 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 .vision-content,

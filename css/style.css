@@ -24,9 +24,6 @@ body{
     /* overflow-y: hidden;   */
     flex-direction: column;
 }
-html{
-    scroll-behavior: smooth;
-}
 
 
 
