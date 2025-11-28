@@ -1,0 +1,27 @@
+.blog-card{
+    height: 100vh;
+}
+.blog-card-content h3{
+    text-align: center;
+}
+
+.blog-card-content{
+
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.btn-toggle{
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #0a3d91;
+    color: white;
+    cursor: pointer;
+}
