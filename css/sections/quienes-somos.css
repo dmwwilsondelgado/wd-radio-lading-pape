@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     inset: 0; /* la clave para que inserte el color */
-    background: rgb(0, 0, 0,0.6);
+    background: rgb(0, 0, 0,0.3)"";
     z-index: 1;
 }
 
