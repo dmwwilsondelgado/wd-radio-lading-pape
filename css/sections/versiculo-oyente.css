@@ -15,6 +15,10 @@
     z-index: 2;
     max-width: 800px;
     padding: 40px 20px;
+    transition: transform 0.3s ease;
+}
+.versiculo-oyente-content:hover{
+    transform: scale(1.15);
 }
 
 .versiculo-oyente p{

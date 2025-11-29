@@ -18,6 +18,10 @@
 .acerca-info{
     text-align: center;
     font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.acerca-info:hover{
+    transform: scale(1.13);
 }
 .acerca-de-nosotros-content h2{
     text-align: center;
@@ -32,6 +36,7 @@
     line-height: 1.6;
     color: white;
 }
+
 
 
 

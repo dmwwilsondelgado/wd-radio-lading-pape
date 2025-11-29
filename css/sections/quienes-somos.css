@@ -18,7 +18,11 @@
     margin-top: 50px;
     position: relative;
     z-index: 2;
+    transition: transform 0.3s ease;
     /* max-width: 900px; */
+}
+.quienes-somos-content:hover{
+    transform: scale(1.05);
 }
 
 

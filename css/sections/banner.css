@@ -91,9 +91,7 @@ header{
     33%  {opacity: 0;}
     100% {opacity: 0;}
 } 
-.banner{
-    position: relative;
-}
+
 
 
 .banner-grid {
@@ -145,8 +143,6 @@ header{
     background-color:var(--fondo-azul-principal);
     border-radius: 50px;
     z-index: 50;
-    display: flex;
-    perspective: 800p
 }
 
 .play-btn{
@@ -165,7 +161,7 @@ header{
   transform: translateZ(40px) scale(1.12);
   box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
 }
-
+/* icono de voz */
 .fa-solid{
     color: white;
 }
@@ -174,10 +170,13 @@ header{
 .banner-content{
     position: absolute;
     left: 28%;
-    /* transform: translate(-50%,-50%); */
     z-index: 40;
     padding: 100px;
     color: var(--fondo-azul-secundario);
+    transition: transform 0.3s ease;
+}
+.banner-content:hover{
+    transform: scale(1.05);
 }
 .banner-info{
     display: flex;
@@ -194,6 +193,7 @@ header{
 /* animation radioo wave */
 
 .radio-wave{
+    z-index: 100;
     position: absolute;
     bottom: 33%;
     right: 39%;
