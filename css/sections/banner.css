@@ -16,14 +16,6 @@ header{
     color: white;
     
 }
-/* .link-clik{
-    margin:30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition:transform 0.3s ease;
-} */
 .link-clik {
   position: relative;
   margin: 30px;
@@ -138,7 +130,7 @@ header{
     transition:transform 0.3s ease;
 }
 .logo-wd-banner:hover{
-    transform: translateY(-10px) scale(1.02);
+    transform: translate(-1px) scale(1.02);
 }
 
 .button-play{
@@ -153,7 +145,10 @@ header{
     background-color:var(--fondo-azul-principal);
     border-radius: 50px;
     z-index: 50;
+    display: flex;
+    perspective: 800p
 }
+
 .play-btn{
     width: 50px;
     height: 50px;
@@ -161,7 +156,16 @@ header{
     border: none;
     cursor: pointer;
     background-color: red;
+    /* movivimineto */
+    transform: translateZ(0) scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.button-play:hover .play-btn {
+  transform: translateZ(40px) scale(1.12);
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
+}
+
 .fa-solid{
     color: white;
 }
