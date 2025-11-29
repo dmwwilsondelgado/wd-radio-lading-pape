@@ -16,12 +16,40 @@ header{
     color: white;
     
 }
-.link-clik{
+/* .link-clik{
     margin:30px;
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
+    transition:transform 0.3s ease;
+} */
+.link-clik {
+  position: relative;
+  margin: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.link-clik::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: red;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.link-clik:hover::before {
+  opacity: 0.2;
+}
+
+.link-clik:hover {
+  color: red;
 }
  .banner{
     height: 100vh;
@@ -98,10 +126,19 @@ header{
     font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--fondo-azul-principal);
+    transition:transform 0.3s ease;
+}
+.banner-right:hover{
+    transform: translateY(-8px) scale(1.02);
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.15); */
 }
 
 .logo-wd-banner {
     width: 200px; /* no se toca el tamaño */
+    transition:transform 0.3s ease;
+}
+.logo-wd-banner:hover{
+    transform: translateY(-10px) scale(1.02);
 }
 
 .button-play{
