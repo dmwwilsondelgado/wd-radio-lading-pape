@@ -78,6 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
       throw error
     }
   })
+  player.addEventListener("error",()=>{
+    alert("no se pudo conenctar al stream");
+  })
   //control de volumen 
   volume.addEventListener("input",()=>{
     player.volume = volume.volume;
@@ -86,8 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
   let enlace2 = "https://stream.zeno.fm/hmu22t6g798uv.m3u";
   let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";
-  //enlace1 :https://stream.zeno.fm/hmu22t6g798uv
-
 });
 
 
