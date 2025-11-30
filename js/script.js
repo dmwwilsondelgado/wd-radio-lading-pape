@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   //control de volumen 
   volume.addEventListener("input",()=>{
-    player.volume = volume.player;
+    player.volume = volume.volume;
   })
   //links de enalces 
   let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
