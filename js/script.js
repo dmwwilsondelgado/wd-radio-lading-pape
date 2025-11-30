@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM listo");
+  //////////////////////////////////////////////////////////////////////////////////////////////////
   const logos = document.querySelectorAll(".logo");
 
   const observer = new IntersectionObserver(entries => {
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   logos.forEach(logo => observer.observe(logo));
-
+  //////////////////////////////////////////////////////////////////////////////////////////////////
   //vamos a crear interactividad al botom desde el doom
 
   const btn = document.querySelector(".btn-toggle");
@@ -59,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(animarScroll);
     });
   });
+  ///////////////////////////////////////////////////////////////////////
+  const selecionarboton = document.querySelector(`.play-btn`);
+  
 
 });
 

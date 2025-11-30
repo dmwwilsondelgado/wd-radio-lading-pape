@@ -50,3 +50,30 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
   });
 });
+
+
+const playBtn = document.getElementById("playBtn");
+const player = document.getElementById("player");
+const volume = document.getElementById("volume");
+const icon = playBtn.querySelector("i");
+
+// volumen inicial
+player.volume = volume.value;
+
+// play / pause
+playBtn.addEventListener("click", () => {
+  if (player.paused) {
+    player.play();
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+  } else {
+    player.pause();
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+  }
+});
+
+// control de volumen
+volume.addEventListener("input", () => {
+  player.volume = volume.value;
+});
