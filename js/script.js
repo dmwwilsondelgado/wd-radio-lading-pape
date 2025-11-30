@@ -66,16 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const volume = document.getElementById("volume");
   //ya selecionados creamo un evento en el cual estas contantes sean utili<adas
   playBtn.addEventListener("clik",()=>{
-    try {
-      if (player.paused) {
+    if (player.paused) {
         player.play();
         playBtn.classList.add("playing");
-      }else{
-        player.pause();
-        playBtn.classList.remove("playing");
-      }
-    } catch (error) {
-      throw error
+    }else{
+      player.pause();
+      playBtn.classList.remove("playing");
     }
   })
   player.addEventListener("error",()=>{
