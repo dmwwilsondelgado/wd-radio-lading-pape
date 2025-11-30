@@ -61,8 +61,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   ///////////////////////////////////////////////////////////////////////
-  const selecionarboton = document.querySelector(`.play-btn`);
-  
+  const player = document.getElementById(`player`);
+  const playBtn = document.getElementById(`playBtn`);
+  const volume = document.getElementById("volume");
+  //ya selecionados creamo un evento en el cual estas contantes sean utili<adas
+  playBtn.addEventListener("clik",()=>{
+    try {
+      if (player.paused) {
+        player.play();
+        playBtn.classList.add("playing");
+      }else{
+        player.pause();
+        playBtn.classList.remove("playing");
+      }
+    } catch (error) {
+      throw error
+    }
+  })
+  //control de volumen 
+  volume.addEventListener("input",()=>{
+    player.volume = volume.player;
+  })
+  //links de enalces 
+  let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
+  let enlace2 = "https://stream.zeno.fm/hmu22t6g798uv.m3u";
+  let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";
+  //enlace1 :https://stream.zeno.fm/hmu22t6g798uv
 
 });
 

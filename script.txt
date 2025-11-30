@@ -21,7 +21,6 @@ volume.addEventListener("input", () => {
 
 
 
-
 const botones = document.querySelectorAll(".btn-toggle");
 
 botones.forEach((btn) => {
