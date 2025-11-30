@@ -64,27 +64,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById(`player`);
   const playBtn = document.getElementById(`playBtn`);
   const volume = document.getElementById("volume");
+  const STREAM_URL = "https://stream.zeno.fm/hmu22t6g798uv"; 
   //ya selecionados creamo un evento en el cual estas contantes sean utili<adas
-  playBtn.addEventListener("clik",()=>{
-    if (player.paused) {
-        player.play();
-        playBtn.classList.add("playing");
-    }else{
-      player.pause();
-      playBtn.classList.remove("playing");
+  playBtn.addEventListener("click", async()=>{
+    //cramos funcion asyncrona que espere respuesta de la urll 
+    try {
+      if (player.paused) {
+        if (!player.src) {
+          player.src = STREAM_URL;
+        }
+        await player.play();
+        playBtn.classList.add("playing")
+      }else{
+        //metodo de sto 
+        player.pause();
+        playBtn.classList.remove("playing");
+      }
+    }catch (e) {
+      alert("no se pudo  conectar al servidor");
+      console.log(e);
     }
   })
-  player.addEventListener("error",()=>{
-    alert("no se pudo conenctar al stream");
-  })
   //control de volumen 
-  volume.addEventListener("input",()=>{
-    player.volume = volume.volume;
-  })
+  volume.addEventListener("input", () => {
+    player.volume = volume.value;
+  });
+  //error del sistema 
+  player.addEventListener("error", () => {
+    alert("Error al cargar el stream");
+  });
   //links de enalces 
-  let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
+  /* let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
   let enlace2 = "https://stream.zeno.fm/hmu22t6g798uv.m3u";
-  let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";
+  let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";  */
 });
 
 
