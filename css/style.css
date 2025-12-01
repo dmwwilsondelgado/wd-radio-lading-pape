@@ -61,11 +61,11 @@ body.loaded #loader {
 
 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .acerca-de-nosotros-content{
         grid-template-columns: 1fr;
     }
-}
+} */
 
 
 
