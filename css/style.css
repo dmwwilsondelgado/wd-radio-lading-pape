@@ -67,9 +67,24 @@ body.loaded #loader {
 /* 
 **Media Querys ***********************
  */
+
 @media (max-width: 768px){
-    .acerca-de-nosotros-content{
-        grid-template-columns: 1fr;
-      
-    }
+  .header-content{
+    flex-direction: column;   /* CLAVE */
+    align-items: flex-start;  /* ordenado */
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 1px;
+  }
+  .link-clik {
+    display: flex;
+    margin: 0;
+    font-size: 1.0rem;
+  }
+  .header-content img{
+    max-width: 120px;
+  }
+  .logo-wd-banner{
+    display: none;
+  }
 }
