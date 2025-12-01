@@ -24,6 +24,12 @@ body{
     /* overflow-y: hidden;   */
     flex-direction: column;
 }
+.content{
+  display: flex;/* aplica el modelo caja felxible */
+  overflow-x: hidden;/* desactiva el desplazamiento horizontal  */
+  overflow-y:hidden ;/* Desactiva el desplazamiento vertical  */
+  flex-direction: column; /* organiza los elemenotos en columna  */
+}
 #loader {
   position: fixed;
   inset: 0;
