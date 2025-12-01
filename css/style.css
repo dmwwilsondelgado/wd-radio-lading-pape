@@ -85,6 +85,21 @@ body.loaded #loader {
     max-width: 120px;
   }
   .logo-wd-banner{
-    display: none;
+    position:absolute;
+    margin-top: 250px;
+    margin-left: -50px;
   }
+  .banner-right{
+    position: absolute;
+    left: 0%;
+    text-align: center;
+  }
+  .button-play{ 
+    top: 55%;
+  }
+  .banner-info{
+    display: none;
+    margin-top: 10px;
+    margin-left: -60px;
+  } 
 }
