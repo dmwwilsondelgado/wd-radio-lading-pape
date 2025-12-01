@@ -95,7 +95,7 @@ header{
 
 
 .banner-grid {
-    position: relative;
+    position: absolute;
     z-index: 20;
     display: grid;
     grid-template-columns: auto 1fr; /* logo + texto */
@@ -103,7 +103,9 @@ header{
     align-items: center;
     padding: 20px;
     margin-top: 105px;
-    margin-left:405px ;/*  aca aver si se puede cambiar puede producir errores mas adelante */
+    top: 6%;
+    left: 30%;
+    /* margin-left:405px ; *//*  aca aver si se puede cambiar puede producir errores mas adelante */
 }
 
 .banner-left {
@@ -169,6 +171,7 @@ header{
 
 .banner-content{
     position: absolute;
+    bottom: 2%;
     left: 28%;
     z-index: 40;
     padding: 100px;
