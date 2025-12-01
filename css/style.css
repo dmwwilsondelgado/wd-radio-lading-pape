@@ -67,6 +67,16 @@ body.loaded #loader {
     }
 } */
 
+@media (max-width: 768px) {
+  body{
+    overflow-x:hidden ;
+  }
+  .acerca-de-nosotros-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 
 
 
