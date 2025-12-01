@@ -76,7 +76,7 @@ body.loaded #loader {
     padding: 0.5rem;
     margin: 1px;
   }
-  .link-clik {
+  .link-clik {  
     display: flex;
     margin: 0;
     font-size: 1.0rem;
@@ -101,5 +101,13 @@ body.loaded #loader {
     display: none;
     margin-top: 10px;
     margin-left: -60px;
-  } 
+  }
+  /* sections para abajo reducir le letra  */
+  .quienes-somos{
+    display: flex;
+    align-items: center;
+  }
+  .quienes-somos-content p{
+    font-size: small;
+  }
 }
