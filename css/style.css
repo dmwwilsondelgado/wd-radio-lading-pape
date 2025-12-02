@@ -108,6 +108,9 @@ body.loaded #loader {
     align-items: center;
   }
   .quienes-somos-content p{
-    font-size: small;
+    font-size: smaller;
+  }
+  .vision-mision-content{
+    background-position: center;
   }
 }
