@@ -104,6 +104,7 @@ body.loaded #loader {
   }
   /* sections para abajo reducir le letra  */
   .quienes-somos{
+    background-position: center;
     display: flex;
     align-items: center;
   }
