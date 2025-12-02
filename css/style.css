@@ -67,6 +67,15 @@ body.loaded #loader {
 /* 
 **Media Querys ***********************
  */
+ /* Mobile */
+@media (max-width: 360px){}
+
+@media (max-width: 600px){}
+
+@media (max-width: 480px){}
+
+/* Tablet */
+@media (max-width: 768px){}
 
 @media (max-width: 768px){
   .header-content{
@@ -120,21 +129,16 @@ body.loaded #loader {
   }
   .acerca-de-nosotros-content{
     grid-template-columns: 1fr;
-   /*  height: auto; */
     padding: 1rem;
     background-color: var(--fondo-azul-principal);
   }
-  /* .acerca-de-nosotros{ 
-    display: flex;        
-    flex-direction: column;
-    gap: 1.5rem;
-    height: auto;           
-    padding: 1rem;
-  } */
   .acerca-info{
     font-size: small;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
   }
-}
+
+@media (max-with) {
+  
+}}
+/* Desktop */
+@media (min-width: 1024px){}
+@media (max-width: 1023px) and (min-width: 768px) {  }
