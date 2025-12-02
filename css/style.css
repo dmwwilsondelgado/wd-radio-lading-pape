@@ -113,4 +113,27 @@ body.loaded #loader {
   .vision-mision-content{
     background-position: center;
   }
+  .logo-wd-letf,
+  .logo-wd-rigth{
+    display: none;
+  }
+  .acerca-de-nosotros-content{
+    grid-template-columns: 1fr;
+   /*  height: auto; */
+    padding: 1rem;
+    background-color: var(--fondo-azul-principal);
+  }
+  /* .acerca-de-nosotros{ 
+    display: flex;        
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;           
+    padding: 1rem;
+  } */
+  .acerca-info{
+    font-size: small;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+  }
 }
