@@ -20,8 +20,6 @@ body{
     display: flex;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden;   */
     flex-direction: column;
 }
 .content{
@@ -67,20 +65,11 @@ body.loaded #loader {
 /* 
 **Media Querys ***********************
  */
- /* Mobile */
-@media (max-width: 360px){}
-
-@media (max-width: 600px){}
-
-@media (max-width: 480px){}
-
-/* Tablet */
-@media (max-width: 768px){}
-
+/* 
 @media (max-width: 768px){
   .header-content{
-    flex-direction: column;   /* CLAVE */
-    align-items: flex-start;  /* ordenado */
+    flex-direction: column;  
+    align-items: flex-start;  
     gap: 1rem;
     padding: 0.5rem;
     margin: 1px;
@@ -111,7 +100,6 @@ body.loaded #loader {
     margin-top: 10px;
     margin-left: -60px;
   }
-  /* sections para abajo reducir le letra  */
   .quienes-somos{
     background-position: center;
     display: flex;
@@ -135,10 +123,67 @@ body.loaded #loader {
   .acerca-info{
     font-size: small;
   }
+} */
 
-@media (max-with) {
-  
-}}
-/* Desktop */
-@media (min-width: 1024px){}
-@media (max-width: 1023px) and (min-width: 768px) {  }
+/* @media (max-width: 359px){
+  .button-play{ top: 35%; }
+}
+ */
+@media (min-width: 360px) and (max-width: 413px){
+  .header-content{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 1px;
+  }
+  .link-clik{  
+    display: flex;
+    margin: 0;
+    font-size: 1.0rem;
+  }
+  .header-content img{
+    max-width: 120px;
+  }
+  .logo-wd-banner{
+    position:absolute;
+    margin-top: 250px;
+    margin-left: -50px;
+  }
+  .banner-right{
+    position: absolute;
+    left: 0%;
+    text-align: center;
+  }
+  .button-play{ 
+    top: 55%;
+  }
+  .banner-info{
+    display: none;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+  .quienes-somos{
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .quienes-somos-content p{
+    font-size: smaller;
+  }
+  .vision-mision-content{
+    background-position: center;
+  }
+  .logo-wd-letf,
+  .logo-wd-rigth{
+    display: none;
+  }
+  .acerca-de-nosotros-content{
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    background-color: var(--fondo-azul-principal);
+  }
+  .acerca-info{
+    font-size: small;
+  }
+}
