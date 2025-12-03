@@ -359,6 +359,9 @@ body.loaded #loader {
     padding: 1rem;
     background-color: var(--fondo-azul-principal);
   }
+  .logo-wd-rigth{
+    display: none;
+  }
   .acerca-info{
     font-size: small;
   }
