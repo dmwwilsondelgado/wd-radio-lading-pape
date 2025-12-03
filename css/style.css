@@ -424,7 +424,64 @@ body.loaded #loader {
     font-size: small;
   }
 }
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:768px) and (max-width:1023px){
+  header{
+    padding-left: 60px;
+  }
+  .header-content{
+    align-items: center;
+    gap: 2rem;
+    padding: 0.9rem;
+    margin: 1px;
+  } 
+  .link-clik{  
+    margin: 10px;
+    font-size: 1.50rem;
+  } 
+  .header-content img{
+    max-width: 120px;
+  }
+  .logo-wd-banner{
+    width: 250px;
+    position:absolute;
+    top: 450px;
+    left: 20px;
+  }
+  .banner-right{
+    left: 50%;
+    /* text-align: center; */
+  } 
+  /* //////// */
+  .button-play{ 
+    top: 40%;
+  }
+  .banner-info{
+    display: none;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+  .quienes-somos{
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .quienes-somos-content p{
+    font-size: smaller;
+  }
+  .vision-mision-content{
+    background-position: center;
+  }
+  .acerca-de-nosotros-content{
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--fondo-azul-principal);
+  }
+  .acerca-info{
+    font-size: small;
+  }
+}
+@media (min-width:1024px)and (max-width:1040px) {
   header{
     padding-left: 60px;
   }
