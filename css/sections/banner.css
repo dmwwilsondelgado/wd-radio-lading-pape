@@ -228,6 +228,6 @@ header{
     }
     100%{
         transform: scale(4);
-        opacity: 0;
+        opacity: 1;
     }
 }
