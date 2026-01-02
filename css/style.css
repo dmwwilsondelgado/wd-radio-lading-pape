@@ -475,12 +475,12 @@ body.loaded #loader {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 1rem;
-    background-color: var(--fondo-azul-principal);
+    background-color: var(--fondo-azul-principal); 
   }
   .acerca-info{
     font-size: small;
   }
-}
+
 @media (min-width:1024px)and (max-width:1040px) {
   header{
     padding-left: 60px;
