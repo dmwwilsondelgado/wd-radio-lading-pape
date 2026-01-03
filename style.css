@@ -136,6 +136,8 @@ img {
 
 .button-play{
   background-color: var(--fondo-azul-principal);
+  border-radius: 10px;
+  padding: 10px;
 }
 .fa-solid{
   color: white;
@@ -153,7 +155,12 @@ img {
   transform: translateZ(40px) scale(1.12);
   box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
 }
-
+.banner{
+  color:var(--fondo-azul-secundario);
+}
+.banner-content{
+  margin-left: 10px;
+}
 
 input[type="range"] {
   width: 100px;
