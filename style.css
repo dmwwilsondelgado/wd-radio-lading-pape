@@ -81,24 +81,45 @@ img {
 .slide {
   background-size: cover;
   background-position: center;
+  animation: slideAnim 24s infinite ease-in-out;
+  z-index: -1;
 }
 
-/* contenido */
-.banner-inner {
-  position: relative;
-  z-index: 2;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  text-align: center;
+.slide1{
+    background-image: url("../../img/vista-posterior-hombre-disfrutando-de-la-musica.webp");
+    animation-delay: 0s;  
 }
+
+.slide2{
+    background-image: url("../../img/anfitrion-femenino-comunicandose-por-el-microfono-mujer-en-estudio-de-radio.webp");
+    animation-delay: 6s;
+}
+
+.slide3{
+    background-image: url("../../img/mujer-trabajando-en-radio-con-equipo-profesional.webp");
+    animation-delay: 12s;
+}
+
+.slide4{
+    background-image: url("../../img/hermoso-tiro-de-un-hombre-con-la-cabeza-contra-la-cruz-de-madera-en-un-campo-de-hierba.webp");
+    animation-delay: 18s;
+}
+@keyframes slideAnim {
+    0%   {opacity: 0;}
+    8%   {opacity: 1;}
+    25%  {opacity: 1;}
+    33%  {opacity: 0;}
+    100% {opacity: 0;}
+} 
+
 
 .logo-wd-banner {
   width: 140px;
+  transition:transform 0.3s ease;
 }
-
+.logo-wd-banner:hover{
+    transform: translate(-1px) scale(1.02);
+}
 .banner-text h2 {
   font-size: 1.6rem;
   line-height: 1.2;
