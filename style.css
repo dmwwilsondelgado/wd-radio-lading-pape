@@ -125,30 +125,35 @@ img {
   line-height: 1.2;
 }
 
-
-.player {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+.button-play{
+  background-color: var(--fondo-azul-principal);
+  padding: 20px;
+  border-radius: 10px;
 }
-
-.play-btn {
-  background: #f5c542;
+.fa-solid{
+  color: white;
+}
+.play-btn{
+  background-color: red;
   border: none;
   padding: 0.8rem;
   border-radius: 50%;
   cursor: pointer;
+  transform: translateZ(0) scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.button-play:hover .play-btn {
+  transform: translateZ(40px) scale(1.12);
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
+}
+
 
 input[type="range"] {
   width: 100px;
 }
-
-
 section {
   padding: 3rem 1.5rem;
 }
-
 .quienes-somos-content,
 .vision-content,
 .mision-content,
@@ -158,34 +163,26 @@ section {
   margin: auto;
   text-align: center;
 }
-
 section h2 {
   margin-bottom: 1rem;
 }
-
 section p {
   opacity: 0.9;
 }
-
-
-
 .footer {
   background: #111;
   padding: 2rem 1.5rem;
 }
-
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
 }
-
 .footer a {
   color: #f5c542;
   text-decoration: none;
 }
-
 .footer-bottom {
   margin-top: 2rem;
   font-size: 0.85rem;
