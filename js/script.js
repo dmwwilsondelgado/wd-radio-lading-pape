@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM listo");
+  // vamos a hacer que el boton cobre vida 
   //////////////////////////////////////////////////////////////////////////////////////////////////
   const logos = document.querySelectorAll(".logo");
 
@@ -66,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const volume = document.getElementById("volume");
   const STREAM_URL = "https://stream.zeno.fm/hmu22t6g798uv"; 
   //ya selecionados creamo un evento en el cual estas contantes sean utili<adas
+  const icon = playBtn.querySelector("i")
   playBtn.addEventListener("click", async()=>{
     //cramos funcion asyncrona que espere respuesta de la urll 
     try {
@@ -73,15 +75,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!player.src) {
           player.src = STREAM_URL;
         }
+
         await player.play();
-        playBtn.classList.add("playing")
-      }else{
-        //metodo de sto 
+
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+        playBtn.classList.add("playing");
+
+      } else {
         player.pause();
+
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
         playBtn.classList.remove("playing");
       }
-    }catch (e) {
-      alert("no se pudo  conectar al servidor");
+
+    } catch (e) {
+      alert("no se pudo conectar al servidor");
       console.log(e);
     }
   })
@@ -96,7 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //links de enalces 
   /* let enlace1 = "https://stream.zeno.fm/hmu22t6g798uv";
   let enlace2 = "https://stream.zeno.fm/hmu22t6g798uv.m3u";
-  let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";  */
+  let enlace3 = "https://stream.zeno.fm/hmu22t6g798uv.pls";*/
+  // Vamos a gragar icono de desspausa 
 });
 
 
