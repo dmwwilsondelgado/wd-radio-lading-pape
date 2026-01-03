@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-header img {
+  width: 120px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* fondo */
+.slides,
+.slide {
+  position: absolute;
+  inset: 0;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+}
+
+/* contenido */
+.banner-inner {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.logo-wd-banner {
+  width: 140px;
+}
+
+.banner-text h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.play-btn {
+  background: #f5c542;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+.quienes-somos-content,
+.vision-content,
+.mision-content,
+.acerca-info,
+.versiculo-oyente-content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+section p {
+  opacity: 0.9;
+}
+
+.footer {
+  background: #111;
+  padding: 2rem 1.5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #f5c542;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-links {
+    flex-direction: row;
+  }
+
+  .banner-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

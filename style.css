@@ -16,6 +16,15 @@
   padding: 0;
 }
 
+.content{
+  overflow-x: hidden;/* desactiva el desplazamiento horizontal  */
+  overflow-y:hidden ;/* Desactiva el desplazamiento vertical  */
+  flex-direction: column; /* organiza los elemenotos en columna  */
+}
+/* html, body {
+  overflow-x: hidden;
+} */
+
 html {
   font-size: 16px;
 }
@@ -127,8 +136,6 @@ img {
 
 .button-play{
   background-color: var(--fondo-azul-principal);
-  padding: 20px;
-  border-radius: 10px;
 }
 .fa-solid{
   color: white;
@@ -169,20 +176,25 @@ section h2 {
 section p {
   opacity: 0.9;
 }
+
+
 .footer {
   background: #111;
   padding: 2rem 1.5rem;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
 }
+
 .footer a {
   color: #f5c542;
   text-decoration: none;
 }
+
 .footer-bottom {
   margin-top: 2rem;
   font-size: 0.85rem;
