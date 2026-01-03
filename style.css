@@ -421,6 +421,9 @@ section p {
   background-color: #003E87;
   flex-direction: column;
 }
+.logo-wd-left{
+  align-items: center;
+}
 
 
 @media (min-width: 768px) {
