@@ -225,7 +225,7 @@ section p {
 
 .quienes-somos{
     height: 100vh;
-    background-image: url("../../img/chica-audifonos.webp");
+    background-image: url("img/chica-audifonos.webp");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -273,7 +273,7 @@ section p {
     gap: 40px;
     flex-wrap: wrap;
     height: 100vh;
-    background-image: url("../../img/libro-abierto-con-elemento-natural.webp");
+    background-image: url("img/libro-abierto-con-elemento-natural.webp");
     background-size: cover;
     position: relative;
 }
@@ -313,7 +313,7 @@ section p {
     color: white;
     text-align: center;
     height: 70vh;
-    background-image: url("../../img/chica-microfono-radio-sonriente.webp");
+    background-image: url("img/chica-microfono-radio-sonriente.webp");
     background-size: cover;
     background-position: center;
     overflow: hidden;
